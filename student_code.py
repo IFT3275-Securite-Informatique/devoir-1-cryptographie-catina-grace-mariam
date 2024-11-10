@@ -1,6 +1,9 @@
 from crypt import *
 
 
+symboles = ['f', '’', '\r', '\n', '9', 'Q', 'm', 'y', '*', 'j', 'G', 'À', 'a', 'q', 'k', 'ê', 'à', 'ç', 'C', '-', '#', 'R', 'E', 'L', 'O', 'c', '$', 'x', ')', ',', 'M', 'H', 'e', '.', 'I', 'z', 'p', '/', 'A', 'Z', 'l', 's', 'K', '\ufeff', 'w', '“', 'ï', 'ô', 'ë', '2', 'Â', 'D', 'b', ':', ']', '1', 'u', ';', '3', '…', 'Ê', '%', 'r', 'V', 'F', 'î', '•', 'N', 'v', 'Y', '_', '«', ' ', '‘', 'Î', '!', "'", 'U', '7', '”', 'È', 't', 
+            'P', 'B', 'i', '?', '™', 'é', '6', 'd', 'h', 'n', 'W', '—', 'º', 'É', 'o', '[', 'X', '5', '»', 'S', '8', '°', '(', 'û', '4', 'â', '0', 'è', 'J', 'T', 'ù', 'g', 'Ç', 'e ', 's ', 't ', 'es', ' d', '\r\n', 'en', 'qu', ' l', 're', ' p', 'de', 'le', 'nt', 'on', ' c', ', ', ' e', 'ou', ' q', ' s', 'n ', 'ue', 'an', 'te', ' a', 'ai', 'se', 'it', 'me', 'is', 'oi', 'r ', 'er', ' m', 'ce', 'ne', 'et', 'in', 'ns', ' n', 'ur', 'i ', 'a ', 'eu', 'co', 'tr', 'la', 'ar', 'ie', 'ui', 'us', 'ut', 'il', ' t', 'pa', 'au', 'el', 'ti', 'st', 'un', 'em', 'ra', 'e,', 'so', 'or', 'l ', ' f', 'll', 'nd', ' j', 'si', 'ir', 'e\r', 'ss', 'u ', 'po', 'ro', 'ri', 'pr', 's,', 'ma', ' v', ' i', 'di', ' r', 'vo', 'pe', 'to', 'ch', '. ', 've', 'nc', 'om', ' o', 'je', 'no', 'rt', 'à ', 'lu', "'e", 'mo', 'ta', 'as', 'at', 'io', 's\r', 'sa', "u'", 'av', 'os', ' à', ' u', "l'", "'a", 'rs', 'pl', 'é ', '; ', 'ho', 'té', 'ét', 'fa', 'da', 'li', 'su', 't\r', 'ée', 'ré', 'dé', 'ec', 'nn', 'mm', "'i", 'ca', 'uv', '\n\r', 'id', ' b', 'ni', 'bl']
+
 def compter_frequences(texte, symboles):
     compteur = Counter()
     for symbole in symboles:
