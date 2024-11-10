@@ -56,7 +56,7 @@ def construire_dictionnaire_dechiffrement(freq_chiffrees, freq_moyennes):
     return dictionnaire_dechiffrement
 
 
-def decrypt(C):
+def decrypt(C, symboles):
     """
     Déchiffre un texte chiffré en utilisant les fréquences moyennes pré-calculées.
     """
