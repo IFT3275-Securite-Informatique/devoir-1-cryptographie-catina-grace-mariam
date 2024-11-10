@@ -1,3 +1,4 @@
+from crypt import *
 
 
 def compter_frequences(texte, symboles):
