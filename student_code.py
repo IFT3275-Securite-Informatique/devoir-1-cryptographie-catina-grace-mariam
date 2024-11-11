@@ -1,3 +1,7 @@
+#Catina Beaulieu (20216999)
+#Grace Lee (20174147)
+#Mariam Tamer Mohamed Elwa (20241953)
+
 from crypt import *
 
 key_now = {}
